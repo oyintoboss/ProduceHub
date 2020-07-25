@@ -1,6 +1,6 @@
 # Producehub
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3. Four Json files were used, this was done making use of the json-server. You need to enable a json-server and visit the shared folder of each json file respectively. There you will see the direct localhost port where each api were created making use of the json server.
 
 ## Development server
 
