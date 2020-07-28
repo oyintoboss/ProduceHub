@@ -1,0 +1,83 @@
+<div>
+    <a [routerLink]="['']" routerLinkActive="router-link-active"> < Back To ProduceHub </a>
+</div>
+<div class="row">
+    <app-create-price></app-create-price>
+</div>
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by Produce Name" [(ngModel)]="name" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" (click)="searchName()">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Price List</h4>
+
+<table>
+    <thead>
+    <tr>
+       
+        <th> Sold Price </th>
+        <th> Counter Price </th>
+        <th> Offer Price </th>
+        <th> Real Time Price </th>
+        <th> Created Date </th>
+        <th> Modified Date </th>  
+        <th>Price Negotiable</th>      
+        <th>Action</th>
+    </tr>       
+    </thead>
+    <tbody>
+        <tr class="list-group-item" *ngFor="let price of prices; let i = index"
+    [class.active]="i == currentIndex"
+    (click)="setActiveProduce(price, i)"
+    >
+            <td>{{price.soldPrice}}</td>
+            <td>{{price.counterPrice}}</td>
+            <td>{{price.offerPrice}}</td>
+            <td>{{price.realTimePrice}}</td>
+            <td>{{price.createdDate}}</td>
+            <td>{{price.modifiedDate}}</td> 
+            <td>{{price.isPriceNegotiable}}</td>          
+            <td><a class="badge badge-warning" href="/prices/{{price.id}}">Edit</a></td>            
+        </tr>
+    </tbody>
+</table> 
+
+        <!-- <ul class="list-group">
+            <li class="list-group-item" *ngFor="let produce of produces; let i = index"
+            [class.active]="i == currentIndex"
+            (click)="setActiveProduce(produce, i)"
+            >{{produce.name}} | {{produce.description}} | {{produce.imageUrl}}</li>
+        </ul> -->
+        <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllProduces()">
+            Remove All
+        </button> -->
+    </div>
+    <!-- <div class="col-md-6">
+        <div *ngIf="currentProduce">
+            <h4 style="background-color: coral;">Produce Clicked</h4>
+            <div>
+                <ul>
+                    <li><label><strong>Produce Name:</strong></label> {{ currentProduce.name }}</li> 
+                    <li><label><strong>Produce Description:</strong></label> {{ currentProduce.description }}</li>
+                    <li><label><strong>Produce ImageUrl:</strong></label> {{ currentProduce.imageUrl }}</li>
+                </ul>
+               
+            </div>
+
+            <div>
+                <label><strong>Description:</strong></label> {{currentProduce.published ? "published" : "Pending"}}
+            </div> -->
+
+            <!-- <a class="badge badge-warning" href="/produce/{{currentProduce.id}}">Edit</a> -->
+        <!-- </div>
+        <div *ngIf="!currentProduce">
+            <br />
+            <p>Please click on any Produce List...</p>
+        </div> 
+    </div> -->
+</div>

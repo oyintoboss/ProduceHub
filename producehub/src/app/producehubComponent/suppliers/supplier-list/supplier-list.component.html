@@ -1,0 +1,94 @@
+<div>
+    <a [routerLink]="['']" routerLinkActive="router-link-active"> < Back To ProduceHub </a>
+</div>
+<div class="row">
+    <app-create-supplier></app-create-supplier>
+</div>
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by Produce Name" [(ngModel)]="name" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" (click)="searchName()">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Names List</h4>
+
+<table>
+    <thead>
+    <tr>      
+        <th> First Name </th>
+        <th> Last Name </th>
+        <th> Email Address </th>
+        <th> Address </th>
+        <th> State </th>
+        <th> City </th>
+        <th> Phone Number </th>
+        <th> Country </th>
+        <th> ZipCode </th>
+        <th> About </th>
+        <th> Notes </th>
+        <th> Registration Date </th>
+        <th> IsMember </th>       
+        <th>Action</th>
+    </tr>       
+    </thead>
+    <tbody>
+        <tr class="list-group-item" *ngFor="let supplier of suppliers; let i = index"
+    [class.active]="i == currentIndex"
+    (click)="setActiveSupplier(supplier, i)"
+    >
+            <td>{{supplier.firstName}}</td>
+            <td>{{supplier.lastName}}</td>
+            <td>{{supplier.email}}</td>
+            <td>{{supplier.address}}</td>
+            <td>{{supplier.state}}</td>
+            <td>{{supplier.city}}</td>
+            <td>{{supplier.phone}}</td>
+            <td>{{supplier.country}}</td>
+            <td>{{supplier.zipcode}}</td>
+            <td>{{supplier.about}}</td>
+            <td>{{supplier.notes}}</td>
+            <td>{{supplier.registrationDate}}</td>
+            <td>{{supplier.isMember}}</td>
+            <td><a class="badge badge-warning" href="/supplierz/{{supplier.id}}">Edit</a></td>            
+        </tr>
+    </tbody>
+</table> 
+
+        <!-- <ul class="list-group">
+            <li class="list-group-item" *ngFor="let produce of produces; let i = index"
+            [class.active]="i == currentIndex"
+            (click)="setActiveProduce(produce, i)"
+            >{{produce.name}} | {{produce.description}} | {{produce.imageUrl}}</li>
+        </ul> -->
+        <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllProduces()">
+            Remove All
+        </button> -->
+    </div>
+    <!-- <div class="col-md-6">
+        <div *ngIf="currentProduce">
+            <h4 style="background-color: coral;">Produce Clicked</h4>
+            <div>
+                <ul>
+                    <li><label><strong>Produce Name:</strong></label> {{ currentProduce.name }}</li> 
+                    <li><label><strong>Produce Description:</strong></label> {{ currentProduce.description }}</li>
+                    <li><label><strong>Produce ImageUrl:</strong></label> {{ currentProduce.imageUrl }}</li>
+                </ul>
+               
+            </div>
+
+            <div>
+                <label><strong>Description:</strong></label> {{currentProduce.published ? "published" : "Pending"}}
+            </div> -->
+
+            <!-- <a class="badge badge-warning" href="/produce/{{currentProduce.id}}">Edit</a> -->
+        <!-- </div>
+        <div *ngIf="!currentProduce">
+            <br />
+            <p>Please click on any Produce List...</p>
+        </div> 
+    </div> -->
+</div>

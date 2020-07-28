@@ -1,0 +1,258 @@
+{
+  "prices": [
+    {
+      "id": "prices0001",
+      "produce": [
+        {
+          "id": "produce0002",
+          "productName": "Cassava"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "4000.78",
+      "counterPrice": "3209.78",
+      "offerPrice": "3800.50",
+      "realTimePrice": "3780.78",
+      "createdDate": "3/18/2020",
+      "modifiedDate": "5/18/2020"
+    },
+    {
+      "id": "prices0002",
+      "produce": [
+        {
+          "id": "produce0004",
+          "productName": "Beans"
+        }
+      ],
+      "isPriceNegotiable": false,
+      "soldPrice": "2109.78",
+      "counterPrice": "2090.78",
+      "offerPrice": "2000.00",
+      "realTimePrice": "2050.78",
+      "createdDate": "4/11/2020",
+      "modifiedDate": "4/12/2020"
+    },
+    {
+      "id": "prices0003",
+      "produce": [
+        {
+          "id": "produce0001",
+          "productName": "Yam"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "11900.78",
+      "counterPrice": "700.78",
+      "offerPrice": "500.90",
+      "realTimePrice": "600.23",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0005",
+      "produce": [
+        {
+          "id": "produce0006",
+          "productName": "Cocoa Yam"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "4500.89",
+      "counterPrice": "4400.34",
+      "offerPrice": "3500.57",
+      "realTimePrice": "4000.19",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0006",
+      "produce": [
+        {
+          "id": "produce0005",
+          "productName": "Cocoa Yam"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "1209.78",
+      "counterPrice": "1009.78",
+      "offerPrice": "1000.09",
+      "realTimePrice": "1205.45",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0007",
+      "produce": [
+        {
+          "id": "produce0007",
+          "productName": "Millet"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "9000.32",
+      "counterPrice": "8800.75",
+      "offerPrice": "4000",
+      "realTimePrice": "7000",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0008",
+      "produce": [
+        {
+          "id": "produce0012",
+          "productName": "Cola Nut"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "419600.23",
+      "counterPrice": "500.89",
+      "offerPrice": "450.56",
+      "realTimePrice": "489.90",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0009",
+      "produce": [
+        {
+          "id": "produce0011",
+          "productName": "Cowpea"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "4500.50",
+      "counterPrice": "4000.50",
+      "offerPrice": "2500.35",
+      "realTimePrice": "3500.50",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0010",
+      "produce": [
+        {
+          "id": "produce0010",
+          "productName": "Okra"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "1209.78",
+      "counterPrice": "1200.78",
+      "offerPrice": "599.99",
+      "realTimePrice": "950.55",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0011",
+      "produce": [
+        {
+          "id": "produce0009",
+          "productName": "Rice"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "7800.99",
+      "counterPrice": "7000.34",
+      "offerPrice": "7600.89",
+      "realTimePrice": "5600.50",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0012",
+      "produce": [
+        {
+          "id": "produce0008",
+          "productName": "Maize"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "7899.55",
+      "counterPrice": "4500.99",
+      "offerPrice": "5454.45",
+      "realTimePrice": "5000.50",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0013",
+      "produce": [
+        {
+          "id": "produce0005",
+          "productName": "Cocoa Yam"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "1209.78",
+      "counterPrice": "1009.78",
+      "offerPrice": "1000.09",
+      "realTimePrice": "1205.45",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0014",
+      "produce": [
+        {
+          "id": "produce0007",
+          "productName": "Millet"
+        }
+      ],
+      "isPriceNegotiable": true,
+      "soldPrice": "9000.32",
+      "counterPrice": "8800.75",
+      "offerPrice": "4000",
+      "realTimePrice": "7000",
+      "createdDate": "6/13/2020",
+      "modifiedDate": "6/14/2020"
+    },
+    {
+      "id": "prices0015",
+      "produce": [
+        {
+          "id": "produce0004",
+          "productName": "Beans"
+        }
+      ],
+      "isPriceNegotiable": false,
+      "soldPrice": "2109.78",
+      "counterPrice": "2090.78",
+      "offerPrice": "2000.00",
+      "realTimePrice": "2050.78",
+      "createdDate": "4/11/2020",
+      "modifiedDate": "4/12/2020"
+    },
+    {
+      "soldPrice": "4456",
+      "counterPrice": "24",
+      "offerPrice": "565",
+      "realTimePrice": "2232",
+      "createdDate": "45",
+      "modifiedDate": "32",
+      "isPriceNegotiable": false,
+      "id": "O1IXOy9"
+    },
+    {
+      "soldPrice": "23",
+      "counterPrice": "22",
+      "offerPrice": "22",
+      "realTimePrice": "22",
+      "createdDate": "2",
+      "modifiedDate": "3",
+      "isPriceNegotiable": false,
+      "id": "YA3M0z6"
+    },
+    {
+      "soldPrice": "5000",
+      "counterPrice": "4000",
+      "offerPrice": "2000",
+      "realTimePrice": "1000",
+      "createdDate": "2019-09-04",
+      "modifiedDate": "2020-03-21",
+      "isPriceNegotiable": false,
+      "id": "1PKr_oS"
+    }
+  ]
+}

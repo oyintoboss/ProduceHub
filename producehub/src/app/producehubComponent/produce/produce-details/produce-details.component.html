@@ -1,0 +1,40 @@
+<div *ngIf="currentProduce" class="edit-form">
+    <h4>Produce</h4>
+    <form>
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="currentProduce.name" name="name" />
+        </div>
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="currentProduce.description" name="description" />
+        </div>
+        <div class="form-group">
+            <label for="Description">Produce Image-Url</label>
+            <input type="text" class="form-control" id="imageUrl" [(ngModel)]="currentProduce.imageUrl" name="imageUrl" />
+        </div>
+        <div class="form-group">
+            <label><strong>Status:</strong></label>
+            {{ currentProduce.published ? "Published" : "Pending" }}
+        </div>
+    </form>
+    
+    <button class="badge badge-primary mr-2" *ngIf="currentProduce.published" 
+    (click)="updatePublished(false)"
+    > UnPublish</button>
+    
+    <button class="badge badge-primary mr-2" *ngIf="!currentProduce.published" 
+    (click)="updatePublished(true)"
+    > Publish</button>
+    
+    <button class="badge badge-danger mr-2" (click)="deleteProduce()">Delete</button>
+    
+    <button class="badge badge-success" type="submit" (click)="updateProduce()">Update</button>
+    <p>{{message}}</p>
+
+    </div>
+    
+    <div *ngIf="!currentProduce">
+        <br />
+        <p>Cannot access this Tutorial...</p>
+    </div>

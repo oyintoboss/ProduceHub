@@ -1,0 +1,75 @@
+<div>
+    <a [routerLink]="['']" routerLinkActive="router-link-active"> < Back To ProduceHub </a>
+</div>
+<div class="row">
+    <app-create-produce></app-create-produce>
+</div>
+
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by Produce Name" [(ngModel)]="name" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" (click)="searchName()">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Names List</h4>
+
+<table>
+    <thead>
+    <tr>
+        <th> Produce Name </th>
+        <th> Produce Description </th>
+        <th> Produce Image</th>
+        <th>Action</th>
+    </tr>       
+    </thead>
+    <tbody>
+        <tr class="list-group-item" *ngFor="let produce of produces; let i = index"
+    [class.active]="i == currentIndex"
+    (click)="setActiveProduce(produce, i)"
+    >
+            <td>{{produce.name}}</td>
+            <td>{{produce.description}}</td>
+            <td>{{produce.imageUrl}}</td>
+            <td><a class="badge badge-warning" href="/produce/{{produce.id}}">Edit</a></td>            
+        </tr>
+    </tbody>
+</table> 
+
+        <!-- <ul class="list-group">
+            <li class="list-group-item" *ngFor="let produce of produces; let i = index"
+            [class.active]="i == currentIndex"
+            (click)="setActiveProduce(produce, i)"
+            >{{produce.name}} | {{produce.description}} | {{produce.imageUrl}}</li>
+        </ul> -->
+        <!-- <button class="m-3 btn btn-sm btn-danger" (click)="removeAllProduces()">
+            Remove All
+        </button> -->
+    </div>
+    <!-- <div class="col-md-6">
+        <div *ngIf="currentProduce">
+            <h4 style="background-color: coral;">Produce Clicked</h4>
+            <div>
+                <ul>
+                    <li><label><strong>Produce Name:</strong></label> {{ currentProduce.name }}</li> 
+                    <li><label><strong>Produce Description:</strong></label> {{ currentProduce.description }}</li>
+                    <li><label><strong>Produce ImageUrl:</strong></label> {{ currentProduce.imageUrl }}</li>
+                </ul>
+               
+            </div>
+
+            <div>
+                <label><strong>Description:</strong></label> {{currentProduce.published ? "published" : "Pending"}}
+            </div> -->
+
+            <!-- <a class="badge badge-warning" href="/produce/{{currentProduce.id}}">Edit</a> -->
+        <!-- </div>
+        <div *ngIf="!currentProduce">
+            <br />
+            <p>Please click on any Produce List...</p>
+        </div> 
+    </div> -->
+</div>

@@ -1,0 +1,61 @@
+<div>
+    <a [routerLink]="['']" routerLinkActive="router-link-active"> < Back To ProduceHub </a>
+</div>
+<div class="row">
+    <app-create-buyer></app-create-buyer>
+</div>
+
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by Produce Name" [(ngModel)]="buyerFirstName" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" (click)="searchName()">Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Names List</h4>
+
+<table style="border: 2px solid blue;">
+    <thead>
+    <tr> 
+        <th>Buyer Id</th>       
+        <th> Buyers Address </th>
+        <th> Buyers FirstName </th>
+        <th> Buyers LastName </th>
+        <th> Buyers Email </th>
+        <th> Buyers PhoneNumber </th>
+        <th> Buyers City </th>
+        <th> Buyers State </th>
+        <th> Buyers Country </th>
+        <th> Buyers isExisting </th>
+        <th> Buyers isAgent </th>
+        <th> Buyers AvailabilityDate </th>
+        <th> Buyers PurchaseDate </th>
+        <th>Action</th>
+    </tr>       
+    </thead>
+    <tbody style="border: 2px dashed darkgreen;">
+        <tr class="list-group-item" *ngFor="let buyer of buyerz; let i = index"
+    [class.active]="i == currentIndex" 
+    (click)="setActiveBuyer(buyer, i)"
+    >      <td>{{buyer.id}}</td>
+            <td>{{buyer.buyerAddress}}</td>
+            <td>{{buyer.buyerFirstName}}</td>
+            <td>{{buyer.buyerLastName}}</td>
+            <td>{{buyer.buyerEmail}}</td>
+            <td>{{buyer.buyerPhoneNumber}}</td>
+            <td>{{buyer.buyerCity}}</td>
+            <td>{{buyer.buyerState}}</td>
+            <td>{{buyer.buyerCountry}}</td>
+            <td>{{buyer.isExisitingBuyer}}</td>
+            <td>{{buyer.isAgent}}</td>
+            <td>{{buyer.availabilityDate}}</td>
+            <td>{{buyer.purchasedDate}}</td>
+            <td><a class="badge badge-warning" href="/buyers/{{buyer.id}}">Edit</a></td>            
+        </tr>
+    </tbody>
+</table>        
+    </div>
+</div>

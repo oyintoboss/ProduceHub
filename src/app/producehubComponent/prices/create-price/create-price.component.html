@@ -1,0 +1,39 @@
+<div class="submit-form">
+    <div *ngIf="!submitted">
+        <div class="form-group">
+            <label for="Name">Sold Price</label>
+            <input type="text" class="form-control" id="soldPrice" [(ngModel)]="currentPrice.soldPrice" name="soldPrice" />
+        </div>
+        <div class="form-group">
+            <label for="Description">Counter Price</label>
+            <input type="text" class="form-control" id="counterPrice" [(ngModel)]="currentPrice.counterPrice" name="counterPrice" />
+        </div>
+        <div class="form-group">
+            <label for="Description">Offer Price</label>
+            <input type="text" class="form-control" id="offerPrice" [(ngModel)]="currentPrice.offerPrice" name="offerPrice" />
+        </div>
+        <div class="form-group">
+            <label for="Description">Real-Time Price</label>
+            <input type="text" class="form-control" id="realTimePrice" [(ngModel)]="currentPrice.realTimePrice" name="realTimePrice" />
+        </div>
+        <div class="form-group">
+            <label for="Description">Created Date</label>
+            <input type="date" class="form-control" id="createdDate" [(ngModel)]="currentPrice.createdDate" name="createdDate" />
+        </div>
+        <div class="form-group">
+            <label for="Description">Modified Date</label>
+            <input type="date" class="form-control" id="modifiedDate" [(ngModel)]="currentPrice.modifiedDate" name="modifiedDate" />
+        </div>  
+        <div class="form-group">
+            <label for="Description">Price Negotiable</label>
+            <input type="checkbox" class="form-control" id="isPriceNegotiable" [(ngModel)]="currentPrice.isPriceNegotiable" name="isPriceNegotiable" />
+        </div> 
+        <button (click)="savePrice()" class="btn btn-success">Submit</button>
+    </div>
+
+<div *ngIf="submitted">
+    <h4>You submitted successfully!</h4>
+    <button class="btn btn-success" (click)="newPrice()"></button>
+</div>
+
+</div>
