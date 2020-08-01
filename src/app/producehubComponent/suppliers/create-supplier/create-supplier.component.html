@@ -1,56 +1,57 @@
-      
+<div class="container">     
+    <div class="col-sm-4">
      <div class="submit-form">
         <div *ngIf="!submitted">       
             <div class="form-group">
-                <label for="name">Supplier FirstName</label>
+                <label for="name" class="label label-info">Supplier FirstName</label>
                 <input type="text" class="form-control" id="firstName" required [(ngModel)]="supplier.firstName" name="firstName" />
             </div>
             <div class="form-group">
-                <label for="description">Supplier LastName</label>
+                <label for="description" class="label label-info">Supplier LastName</label>
                 <input type="text" class="form-control" id="lastName" required [(ngModel)]="supplier.lastName" name="lastName" />
             </div>
             <div class="form-group">
-                <label for="description">Supplier Address</label>
+                <label for="description" class="label label-info">Supplier Address</label>
                 <input type="text" class="form-control" id="address" required [(ngModel)]="supplier.address" name="address" />
             </div>
             <div class="form-group">
-                <label for="description">Supplier EmailAddress</label>
+                <label for="description" class="label label-info">Supplier EmailAddress</label>
                 <input type="email" class="form-control" id="email" required [(ngModel)]="supplier.email" name="email" />
             </div>
             <div class="form-group">
-                <label for="description">Phone Number</label>
+                <label for="description" class="label label-info">Phone Number</label>
                 <input type="tel" class="form-control" id="phone" required [(ngModel)]="supplier.phone" name="phone" />
             </div> 
             <div class="form-group">
-                <label for="description">Supplier Country</label>
+                <label for="description" class="label label-info">Supplier Country</label>
                 <input type="text" class="form-control" id="country" required [(ngModel)]="supplier.country" name="country" />
             </div>
             <div class="form-group">
-                <label for="description">Supplier City</label>
+                <label for="description" class="label label-info">Supplier City</label>
                 <input type="text" class="form-control" id="city" required [(ngModel)]="supplier.city" name="city" />
             </div>
             <div class="form-group">
-                <label for="description">Supplier State</label>
+                <label for="description" class="label label-info">Supplier State</label>
                 <input type="text" class="form-control" id="state" required [(ngModel)]="supplier.state" name="state" />
             </div>           
             <div class="form-group">
-                <label for="description">isMember</label>
+                <label for="description" class="label label-info">isMember</label>
                 <input type="checkbox" class="form-control" id="isMember" required [(ngModel)]="supplier.isMember" name="isMember" />
             </div>
             <div class="form-group">
-                <label for="description">ZipCode / PostalCode</label>
+                <label for="description" class="label label-info">ZipCode / PostalCode</label>
                 <input type="text" class="form-control" id="zipcode" required [(ngModel)]="supplier.zipcode" name="zipcode" />
             </div>
             <div class="form-group">
-                <label for="description">Supplier Date</label>
+                <label for="description" class="label label-info">Supplier Date</label>
                 <input type="date" class="form-control" id="registrationDate" required [(ngModel)]="supplier.registrationDate" name="registrationDate" />
             </div>
             <div class="form-group"> 
-                <label for="description">About Supplier</label>
+                <label for="description" class="label label-info">About Supplier</label>
                 <input type="text" class="form-control" id="about" required [(ngModel)]="supplier.about" name="about" />
             </div>
             <div class="form-group"> 
-                <label for="description">Supplier Note</label>
+                <label for="description" class="label label-info">Supplier Note</label>
                 <input type="text" class="form-control" id="notes" required [(ngModel)]="supplier.notes" name="notes" />
             </div>
                                    
@@ -62,4 +63,4 @@
     <button class="btn btn-success" (click)="newSupplier()"></button>
 </div>
 </div>
-
+</div> </div>

@@ -1,23 +1,27 @@
+<div class="container">
+    <div class="col-sm-12">
 <div class="submit-form">
     <div *ngIf="!submitted">
+        <div class="col-sm-6">
         <div class="form-group">
-            <label for="name">Produce Name</label>
+            <label for="name" class="label label-info">Produce Name</label>
             <input type="text" class="form-control" id="name" required [(ngModel)]="produce.name" name="name" />
         </div>
         <div class="form-group">
-            <label for="description">Description</label>
+            <label for="description" class="label label-info">Description</label>
             <input type="text" class="form-control" id="description" required [(ngModel)]="produce.description" name="description" />
         </div>
         <div class="form-group">
-            <label for="imageurl">Produce ImageUrl</label>
+            <label for="imageurl" class="label label-info">Produce ImageUrl</label>
             <input type="text" class="form-control" id="imageUrl" required [(ngModel)]="produce.imageUrl" name="imageUrl" />
         </div>
-        <button (click)="saveProduce()" class="btn btn-success">Submit</button>
+        <button (click)="saveProduce()" class="btn btn-success text-center">Submit</button>
+    </div>
     </div>
 
 <div *ngIf="submitted">
     <h4>You submitted successfully!</h4>
     <button class="btn btn-success" (click)="newProduce()"></button>
 </div>
-
 </div>
+</div></div>

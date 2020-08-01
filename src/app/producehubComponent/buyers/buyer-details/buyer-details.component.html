@@ -1,53 +1,55 @@
+<div class="container">
+    <div class="col-sm-4">
 <div *ngIf="currentBuyer" class="edit-form">
     <h4>Buyer</h4>
     <form>
         <div class="form-group">
-            <label for="name">Buyer Address</label>
+            <label for="name" class="label label-info">Buyer Address</label>
             <input type="text" class="form-control" id="name" required [(ngModel)]="currentBuyer.buyerAddress" name="buyerAddress" />
         </div>
         <div class="form-group">
-            <label for="description">Buyer FirstName</label>
+            <label for="description" class="label label-info">Buyer FirstName</label>
             <input type="text" class="form-control" id="buyerFirstName" required [(ngModel)]="currentBuyer.buyerFirstName" name="buyerFirstName" />
         </div>
         <div class="form-group">
-            <label for="description">Buyer LastName</label>
+            <label for="description" class="label label-info">Buyer LastName</label>
             <input type="text" class="form-control" id="buyerLastName" required [(ngModel)]="currentBuyer.buyerLastName" name="buyerLastName" />
         </div>
         <div class="form-group">
-            <label for="description">Buyer EmailAddress</label>
+            <label for="description" class="label label-info">Buyer EmailAddress</label>
             <input type="text" class="form-control" id="buyerEmail" required [(ngModel)]="currentBuyer.buyerEmail" name="buyerEmail" />
         </div>
         <div class="form-group">
-            <label for="description">Buyer PhoneNumber</label>
+            <label for="description" class="label label-info">Buyer PhoneNumber</label>
             <input type="text" class="form-control" id="buyerPhoneNumber" required [(ngModel)]="currentBuyer.buyerPhoneNumber" name="buyerPhoneNumber" />
         </div>
         <div class="form-group">
-            <label for="description">Buyer City</label>
+            <label for="description" class="label label-info">Buyer City</label>
             <input type="text" class="form-control" id="buyerCity" required [(ngModel)]="currentBuyer.buyerCity" name="buyerCity" />
         </div>
         <div class="form-group">
-            <label for="description">Buyer State</label>
+            <label for="description" class="label label-info">Buyer State</label>
             <input type="text" class="form-control" id="buyerState" required [(ngModel)]="currentBuyer.buyerState" name="buyerState" />
         </div>
         <div class="form-group">
-            <label for="description">Buyer Country</label>
+            <label for="description" class="label label-info">Buyer Country</label>
             <input type="text" class="form-control" id="buyerCountry" required [(ngModel)]="currentBuyer.buyerCountry" name="buyerCountry" />
         </div>
         <div class="form-group">
-            <label for="description">ExistingBuyer</label>
+            <label for="description" class="label label-info">ExistingBuyer</label>
             <input type="checkbox" class="form-control" id="isExisitingBuyer" required [(ngModel)]="currentBuyer.isExisitingBuyer" name="isExisitingBuyer" />
         </div>
         <div class="form-group">
-            <label for="description">IsAgent</label>
+            <label for="description" class="label label-info">IsAgent</label>
             <input type="checkbox" class="form-control" id="isAgent" required [(ngModel)]="currentBuyer.isAgent" name="isAgent" />
         </div>
         <div class="form-group">
-            <label for="description">Availability Date</label>
+            <label for="description" class="label label-info">Availability Date</label>
             <input type="date" class="form-control" id="availabilityDate" required [(ngModel)]="currentBuyer.availabilityDate" name="availabilityDate" />
         </div>
        
         <div class="form-group">
-            <label for="description">Purchased Date</label>
+            <label for="description" class="label label-info">Purchased Date</label>
             <input type="date" class="form-control" id="purchasedDate" required [(ngModel)]="currentBuyer.purchasedDate" name="purchasedDate" />
         </div>       
         <div class="form-group">
@@ -75,3 +77,5 @@
         <br />
         <p>Cannot access this Tutorial...</p>
     </div>
+</div>
+</div>

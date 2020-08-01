@@ -1,23 +1,20 @@
-<div>
-    <a [routerLink]="['']" routerLinkActive="router-link-active"> < Back To ProduceHub </a>
-</div>
+<div class="container">
 <div class="row">
     <app-create-buyer></app-create-buyer>
 </div>
-
-<div class="list row">
+<div class="jumbotron">
     <div class="col-md-8">
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Search by Produce Name" [(ngModel)]="buyerFirstName" />
             <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" (click)="searchName()">Search</button>
+                <button class="btn btn-warning" type="button" (click)="searchName()">Search</button>
             </div>
         </div>
-    </div>
+    </div></div>
     <div class="col-md-6">
-        <h4>Names List</h4>
+        <h4>Buyers List</h4>
 
-<table style="border: 2px solid blue;">
+        <table class="table table-hover table-responsive table-bordered table-striped">
     <thead>
     <tr> 
         <th>Buyer Id</th>       
@@ -36,11 +33,8 @@
         <th>Action</th>
     </tr>       
     </thead>
-    <tbody style="border: 2px dashed darkgreen;">
-        <tr class="list-group-item" *ngFor="let buyer of buyerz; let i = index"
-    [class.active]="i == currentIndex" 
-    (click)="setActiveBuyer(buyer, i)"
-    >      <td>{{buyer.id}}</td>
+    <tbody>
+        <tr *ngFor="let buyer of buyerz; let i = index"  [class.active]="i == currentIndex" (click)="setActiveBuyer(buyer, i)" >      <td>{{buyer.id}}</td>
             <td>{{buyer.buyerAddress}}</td>
             <td>{{buyer.buyerFirstName}}</td>
             <td>{{buyer.buyerLastName}}</td>

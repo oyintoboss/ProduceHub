@@ -1,36 +1,38 @@
+<div class="container">
+    <div class="col-sm-6">
 <div *ngIf="currentPrice" class="edit-form">
     <h4>Prices</h4>
     <form>        
         <div class="form-group">
-            <label for="Name">Sold Price</label>
+            <label for="Name" class="label label-info">Sold Price</label>
             <input type="text" class="form-control" id="soldPrice" [(ngModel)]="currentPrice.soldPrice" name="soldPrice" />
         </div>
         <div class="form-group">
-            <label for="Description">Counter Price</label>
+            <label for="Description" class="label label-info">Counter Price</label>
             <input type="text" class="form-control" id="counterPrice" [(ngModel)]="currentPrice.counterPrice" name="counterPrice" />
         </div>
         <div class="form-group">
-            <label for="Description">Offer Price</label>
+            <label for="Description" class="label label-info">Offer Price</label>
             <input type="text" class="form-control" id="offerPrice" [(ngModel)]="currentPrice.offerPrice" name="offerPrice" />
         </div>
         <div class="form-group">
-            <label for="Description">Real-Time Price</label>
+            <label for="Description" class="label label-info">Real-Time Price</label>
             <input type="text" class="form-control" id="realTimePrice" [(ngModel)]="currentPrice.realTimePrice" name="realTimePrice" />
         </div>
         <div class="form-group">
-            <label for="Description">Created Date</label>
+            <label for="Description" class="label label-info">Created Date</label>
             <input type="date" class="form-control" id="createdDate" [(ngModel)]="currentPrice.createdDate" name="createdDate" />
         </div>
         <div class="form-group">
-            <label for="Description">Modified Date</label>
+            <label for="Description" class="label label-info">Modified Date</label>
             <input type="date" class="form-control" id="modifiedDate" [(ngModel)]="currentPrice.modifiedDate" name="modifiedDate" />
         </div> 
         <div class="form-group">
-            <label for="Description">Price Negotiable</label>
+            <label for="Description" class="label label-info">Price Negotiable</label>
             <input type="checkbox" class="form-control" id="isPriceNegotiable" [(ngModel)]="currentPrice.isPriceNegotiable" name="isPriceNegotiable" />
         </div>       
         <div class="form-group">
-            <label><strong>Status:</strong></label>
+            <label class="alert alert-warning"><strong >Status:</strong></label>
             {{ currentPrice.published ? "Published" : "Pending" }}
         </div>
     </form>
@@ -54,3 +56,4 @@
         <br />
         <p>Cannot access this Tutorial...</p>
     </div>
+</div></div>

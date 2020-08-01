@@ -16,6 +16,8 @@ import { CreateSupplierComponent } from './producehubComponent/suppliers/create-
 import { SupplierDetailsComponent } from './producehubComponent/suppliers/supplier-details/supplier-details.component';
 import { SupplierListComponent } from './producehubComponent/suppliers/supplier-list/supplier-list.component';
 import { SupplierUpdateComponent } from './producehubComponent/suppliers/supplier-update/supplier-update.component';
+import { HeaderComponent } from './producehubComponent/header/header/header.component';
+import { FooterComponent } from './producehubComponent/footer/footer/footer.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { SupplierUpdateComponent } from './producehubComponent/suppliers/supplie
     CreateSupplierComponent,
     SupplierDetailsComponent,
     SupplierListComponent,
-    SupplierUpdateComponent,    
+    SupplierUpdateComponent,
+    HeaderComponent,
+    FooterComponent,    
   ],
   imports: [
     BrowserModule,

@@ -1,33 +1,37 @@
+<div class="container">
+    <div class="col-sm-4">
 <div class="submit-form">
     <div *ngIf="!submitted">
         <div class="form-group">
-            <label for="Name">Sold Price</label>
+            <label for="Name" class="label label-info">Sold Price</label>
             <input type="text" class="form-control" id="soldPrice" [(ngModel)]="currentPrice.soldPrice" name="soldPrice" />
         </div>
         <div class="form-group">
-            <label for="Description">Counter Price</label>
+            <label for="Description" class="label label-info">Counter Price</label>
             <input type="text" class="form-control" id="counterPrice" [(ngModel)]="currentPrice.counterPrice" name="counterPrice" />
         </div>
         <div class="form-group">
-            <label for="Description">Offer Price</label>
+            <label for="Description" class="label label-info">Offer Price</label>
             <input type="text" class="form-control" id="offerPrice" [(ngModel)]="currentPrice.offerPrice" name="offerPrice" />
         </div>
         <div class="form-group">
-            <label for="Description">Real-Time Price</label>
+            <label for="Description" class="label label-info">Real-Time Price</label>
             <input type="text" class="form-control" id="realTimePrice" [(ngModel)]="currentPrice.realTimePrice" name="realTimePrice" />
         </div>
         <div class="form-group">
-            <label for="Description">Created Date</label>
+            <label for="Description" class="label label-info">Created Date</label>
             <input type="date" class="form-control" id="createdDate" [(ngModel)]="currentPrice.createdDate" name="createdDate" />
         </div>
         <div class="form-group">
-            <label for="Description">Modified Date</label>
+            <label for="Description" class="label label-info">Modified Date</label>
             <input type="date" class="form-control" id="modifiedDate" [(ngModel)]="currentPrice.modifiedDate" name="modifiedDate" />
         </div>  
         <div class="form-group">
-            <label for="Description">Price Negotiable</label>
-            <input type="checkbox" class="form-control" id="isPriceNegotiable" [(ngModel)]="currentPrice.isPriceNegotiable" name="isPriceNegotiable" />
-        </div> 
+        <div class="checkbox">
+            <label for="isPriceNegotiable">Price Negotiable</label>
+            <input type="checkbox" id="isPriceNegotiable" [(ngModel)]="currentPrice.isPriceNegotiable" name="isPriceNegotiable" />
+        </div>
+     </div>
         <button (click)="savePrice()" class="btn btn-success">Submit</button>
     </div>
 
@@ -36,4 +40,4 @@
     <button class="btn btn-success" (click)="newPrice()"></button>
 </div>
 
-</div>
+</div></div></div>
