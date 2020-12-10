@@ -145,22 +145,6 @@
       "notes": "The eleventh supplier"
     },
     {
-      "id": "supplier00012",
-      "firstName": "bolaji",
-      "lastName": "ereola",
-      "isMember": false,
-      "registrationDate": "5/18/2020",
-      "address": "4, Moshood abiola",
-      "city": "modupe",
-      "state": "ebuwawa",
-      "zipcode": "234454",
-      "country": "Morocco",
-      "phone": "+344454554123",
-      "email": "bolaji@hotmail.com",
-      "about": "The twelveth suppliers",
-      "notes": "The twelveth suppliers"
-    },
-    {
       "id": "supplier00013",
       "firstName": "darlington",
       "lastName": "kayode",

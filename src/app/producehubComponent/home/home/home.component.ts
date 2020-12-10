@@ -12,5 +12,4 @@ title = 'Produce Hub';
   ngOnInit() {
 
   }
-
 }

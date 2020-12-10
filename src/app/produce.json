@@ -13,10 +13,10 @@
       "imageUrl": "https://www.producehub.com/cassava1_picture.jpg"
     },
     {
-      "id": "produce0004",
       "name": "Beans Plused",
       "description": "Beans is a seed that contains a variety of nutrients and vitamins",
-      "imageUrl": "https://www.producehub.com/beans1_picture.jpg"
+      "published": true,
+      "id": "produce0004"
     },
     {
       "id": "produce0005",
